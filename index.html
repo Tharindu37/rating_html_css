@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Rating</title>
+    <style>
+      /* Hide the default radio button */
+      .star-rating input[type="radio"] {
+        display: none;
+      }
+
+      /* Style the labels (stars) */
+      .star-rating label {
+        font-size: 2em;
+        color: #ddd;
+        cursor: pointer;
+        transition: color 0.2s;
+      }
+
+      /* Change color on hover */
+      .star-rating label:hover,
+      .star-rating input[type="radio"]:checked ~ label {
+        color: #f39c12;
+      }
+
+      /* Star shapes */
+      .star-rating label:before {
+        content: "★";
+      }
+      .test {
+        display: flex;
+        flex-direction: row-reverse;
+        border: 2px solid red;
+        width: 150px;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="star-rating test">
+      <input type="radio" id="star5" name="rating1" value="5" />
+      <label for="star5"></label>
+
+      <input type="radio" id="star4" name="rating2" value="4" />
+      <label for="star4"></label>
+
+      <input type="radio" id="star3" name="rating3" value="3" />
+      <label for="star3"></label>
+
+      <input type="radio" id="star2" name="rating4" value="2" />
+      <label for="star2"></label>
+
+      <input type="radio" id="star1" name="rating5" value="1" />
+      <label for="star1"></label>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Rating</title>
+    <style>
+      .star-rating {
+        display: flex;
+        direction: row-reverse; /* Reverses the star order */
+      }
+
+      /* Hide the default radio button */
+      .star-rating input[type="radio"] {
+        display: none;
+      }
+
+      /* Style the labels (stars) */
+      .star-rating label {
+        font-size: 2em;
+        color: #ddd;
+        cursor: pointer;
+        transition: color 0.2s;
+      }
+
+      /* Change color on hover */
+      .star-rating label:hover,
+      .star-rating label:hover ~ label,
+      .star-rating input[type="radio"]:checked ~ label {
+        color: #f39c12;
+      }
+
+      /* Star shapes */
+      .star-rating label:before {
+        content: "★";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="star-rating">
+      <input type="radio" id="star5" name="rating" value="5" />
+      <label for="star5"></label>
+
+      <input type="radio" id="star4" name="rating" value="4" />
+      <label for="star4"></label>
+
+      <input type="radio" id="star3" name="rating" value="3" />
+      <label for="star3"></label>
+
+      <input type="radio" id="star2" name="rating" value="2" />
+      <label for="star2"></label>
+
+      <input type="radio" id="star1" name="rating" value="1" />
+      <label for="star1"></label>
+    </div>
+  </body>
+</html> -->
